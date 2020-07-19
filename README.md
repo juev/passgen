@@ -1,5 +1,12 @@
 # passgen
 
+## Installation
+
+```bash
+cargo install --git https://github.com/juev/passgen
+```
+
+## Usage
 ```bash
 $ passgen help
 passgen 1.0.0
@@ -34,6 +41,17 @@ LvrCxmkzoqVehuvVgLlNdBvc
 AIjxGnTMYChZKdbjdJKLDzEg
 zbvipDjWycpefdFYkEPvRwQv
 IJLWSlzEfBDhrnuCOfpfsiAa
+```
+
+```bash
+$ passgen -d
+Rd5fQ5NrnUk9qTGbs47qBs51
+baw0a0uTOTFLDdEe3pZVZTcr
+4FLOJ9v3HANAuxs6CjN3QYN9
+lT0Dgt42VSJnDA6OnNQjbLzY
+j98bTTyzL5VItVvs1HZjBjoE
+L7Aw2VgHlqgYSFx8JDcPusY6
+L7Jb68ihmvRFZTDLgkOnqBDE
 ```
 
 ```bash
