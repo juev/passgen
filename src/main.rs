@@ -11,7 +11,7 @@ struct Asset;
 #[derive(StructOpt)]
 #[structopt(
     name = "passgen",
-    version = "1.0.0",
+    version = env!("CARGO_PKG_VERSION"),
     about = "Password genrator (random vs diceware)"
 )]
 struct Opt {
