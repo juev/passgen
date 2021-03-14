@@ -1,9 +1,6 @@
 name: Continuous Integration
 on:
     push:
-    # pull_request:
-    # schedule:
-    #     - cron: "0 0 1,15 * *"
 
 jobs:
     check:
@@ -13,8 +10,6 @@ jobs:
             matrix:
                 rust:
                     - stable
-                    - nightly
-                    - 1.43.0 # lowest supported version
         steps:
             - uses: actions/checkout@v2
             - uses: actions-rs/toolchain@v1
@@ -71,7 +66,6 @@ jobs:
             matrix:
                 rust:
                     - stable
-                    - nightly
         steps:
             - uses: actions/checkout@v2
             - uses: actions-rs/toolchain@v1

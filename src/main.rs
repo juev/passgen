@@ -92,7 +92,7 @@ fn generate_random_passwords(
     for _ in 0..password_count {
         password = (0..password_len)
             .map(|_| {
-                let idx = rng.gen_range(0, charset.len());
+                let idx = rng.gen_range(0..charset.len());
                 (charset.as_bytes())[idx] as char
             })
             .collect();
@@ -124,7 +124,7 @@ fn generate_diceware_passwords(word_count: isize, number: isize, eff: bool) {
             let mut rng = rand::thread_rng();
             let mut index: String = "".to_string();
             for _ in 0..5 {
-                index.push_str(&rng.gen_range(1, 7).to_string()[..]);
+                index.push_str(&rng.gen_range(1..7).to_string()[..]);
             }
             let word = map.get(&(&index[..])).unwrap();
             password.push(word.to_string());
