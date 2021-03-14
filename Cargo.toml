@@ -1,6 +1,6 @@
 [package]
 name = "passgen"
-version = "1.0.1"
+version = "1.0.2"
 authors = ["Denis Evsyukov"]
 edition = "2018"
 
